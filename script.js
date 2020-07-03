@@ -1,5 +1,5 @@
 if (!location.hash) {
-  location.hash = Math.floor(Math.random().toString(36).slice(2));
+  location.hash = Math.random().toString(36).slice(2);
 }
 const roomHash = location.hash.substring(1);
   
