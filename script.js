@@ -115,7 +115,7 @@ function localDescCreated(desc) {
 }
 function startCapture() {
   navigator.mediaDevices.getDisplayMedia({audio:true, video:true})
-  .then(stream1 => yourVideo.srcObject = stream1)
+  .then(stream1 => localVideo.srcObject = stream1)
   .then(stream1 => pc.addStream(stream1));
 }
 function stopCapture() {
